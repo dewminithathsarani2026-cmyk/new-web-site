@@ -1,26 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
-        .container{
+    <style>
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+
+        .clearfix {
+            display: inline-block;
+        }
+
+        /* start commented backslash hack \*/
+        * html .clearfix {
+            height: 1%;
+        }
+
+        .clearfix {
+            display: block;
+        }
+
+        /* close commented backslash hack */
+
+
+        .container {
             background-color: aqua;
             width: 200px;
             height: 100px;
             padding: 25px;
             color: brown;
         }
+
+        .left {
+            float: left;
+            margin-right: 2cm;
+
+        }
+
+        .wrapper {
+            background-color: bisque;
+
+        }
+
+
+        .chg {
+            float: left;
+        }
     </style>
 
 
 </head>
+
 <body>
     <div class="container">
         <h1>Hello</h1>
         <p>This my page</p>
     </div>
-    
+    <br>
+    <br>
+    <div class="wrapper clearfix">
+        <img src="https://maxwebsolutions.co.uk/wp-content/uploads/2024/04/A-Beginners-Guide-to-AI-Image-Prompts-Generation.jpg"
+            alt="image" width="350" height="350" class="left">
+
+
+
+        <p class="chg">True friendship is a rare and invaluable gift that enriches our lives with boundless <br>
+            support, unwavering loyalty, and shared memories that stand the test of time. A <br>
+            genuine friend is someone who celebrates our victories as if they were their own, while <br>
+            offering a comforting shoulder to lean on during our deepest struggles and sorrows.<br>
+            They are the ones who accept us completely for who we are, flaws and all, providing a <br>
+            safe space where we can express our truest selves without any fear of judgment. <br>
+            Through the inevitable changes and distances that life may bring, these meaningful <br>
+            connections remain a steadfast anchor, reminding us that we are never <br> truly alone in this vast and
+            complicated world.</p>
+
+    </div>
 </body>
+
 </html>
